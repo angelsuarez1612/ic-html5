@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        TOKEN = 753253578c9764a224a4aea40c82de1e
+        TOKEN = credentials('SURGE_TOKEN')
       }
     agent {
         docker { image 'josedom24/debian-npm'
